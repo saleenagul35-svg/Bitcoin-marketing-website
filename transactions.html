@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transactions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="transactions.css">
+</head>
+
+<body>
+    <div class="box">
+        <!-- navbar section -->
+        <div class="navbar-container">
+            <h1 class="hdpt1">Bitcoin</h1>
+            <h1 class="hdpt2">Website</h1>
+            <br><br><br>
+            <hr>
+            <nav class="navbar navbar-flx">
+                <h6>MAIN</h6>
+                <ul class="navbar-flx">
+                    <li><a href="home.html"><i class="fa-solid fa-users sidebar-icon"></i>Home</a></li>
+                    <li><a href="Dashboard.html"><i class="fa-solid fa-chart-pie sidebar-icon"></i>Dashboard</a></li>
+                    <li><a href="#"><i class="fa-solid fa-box sidebar-icon"></i>Compaign</a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping sidebar-icon"></i>Orders</a></li>
+                </ul>
+                <h6>REPORTS</h6>
+                <ul class="navbar-flx">
+                    <li><a href="analytics.html"><i class="fa-solid fa-chart-line sidebar-icon"></i>Analytics</a></li>
+                    <li><a href="transactions.html"><i class="fa-solid fa-coins sidebar-icon"></i>Transactions</a></li>
+                </ul>
+                <h6>ADMIN</h6>
+                <ul class="navbar-flx">
+                    <li><a href="settings.html"><i class="fa-solid fa-gear sidebar-icon"></i>Settings</a></li>
+                    <li><a href="#"><i class="fa-solid fa-bell sidebar-icon"></i>Notification</a></li>
+                    <li><a href="login.html"><i class="fa fa-sign-in sidebar-icon" aria-hidden="true" ></i>Log In</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="maintran">
+            <div class="table-header">
+                <h3>
+                    <i class="fa-solid fa-bag-shopping sidebar-icon"></i>Recent Transactions
+                </h3>
+                <button class="btn1-diff" fdprocessedid="2za3gd">
+                    <i class="fa-solid fa-eye sidebar-icon "></i><b>View All</b>
+                </button>
+            </div>
+            <section class="tble">
+                <center>
+                    <table id="table-content">
+                        <tbody>
+                            <tr class="header">
+                                <td><b>Transaction ID</b></td>
+                                <td><b>Customer</b></td>
+                                <td><b>Date</b></td>
+                                <td><b>Amount</b></td>
+                                <td><b>Status</b></td>
+                                <td><b>Actions</b></td>
+                            </tr>
+
+                            <tr>
+                                <td>#TRAN-001</td>
+                                <td>John Smith</td>
+                                <td>15 Mar 2025</td>
+                                <td>$12598.00</td>
+                                <td>
+                                    <div class="status-1"><i class="fa-solid fa-check status-icon1"></i>Completed</div>
+                                </td>
+                                <td><button class="btn1" fdprocessedid="7aak5k"><i
+                                            class="fa-solid fa-eye sidebar-icon "></i><b>View
+                                            All</b></button></td>
+                            </tr>
+
+                            <tr>
+                                <td>#TRAN-002</td>
+                                <td>Emma Johnson</td>
+                                <td>14 Mar 2025</td>
+                                <td>$24325.99</td>
+                                <td>
+                                    <div class="status-2"><i class="fa-solid fa-clock status-icon2"></i>Pending</div>
+                                </td>
+                                <td><button class="btn1" fdprocessedid="msu9nn"><i
+                                            class="fa-solid fa-eye sidebar-icon "></i><b>View
+                                            All</b></button></td>
+                            </tr>
+
+                            <tr>
+                                <td>#TRAN-003</td>
+                                <td>Michael Brown</td>
+                                <td>13 Mar 2025</td>
+                                <td>$7987.50</td>
+                                <td>
+                                    <div class="status-1"><i class="fa-solid fa-check status-icon1"></i>Completed</div>
+                                </td>
+                                <td><button class="btn1" fdprocessedid="6gd73k"><i
+                                            class="fa-solid fa-eye sidebar-icon "></i><b>View
+                                            All</b></button></td>
+                            </tr>
+
+                            <tr>
+                                <td>#TRAN-004</td>
+                                <td>Sarah Davis</td>
+                                <td>12 Mar 2025</td>
+                                <td>$3537.00</td>
+                                <td>
+                                    <div class="status-3"><i class="fa-solid fa-xmark status-icon3"></i>Cancelled</div>
+                                </td>
+                                <td><button class="btn1" fdprocessedid="b6e54h"><i
+                                            class="fa-solid fa-eye sidebar-icon "></i><b>View
+                                            All</b></button></td>
+                            </tr>
+
+                            <tr>
+                                <td>#TRAN-005</td>
+                                <td>David Wilson</td>
+                                <td>11 Mar 2025</td>
+                                <td>$18584.25</td>
+                                <td>
+                                    <div class="status-1"><i class="fa-solid fa-check status-icon1"></i>Completed</div>
+                                </td>
+                                <td><button class="btn1" fdprocessedid="g4xj9n"><i
+                                            class="fa-solid fa-eye sidebar-icon "></i><b>View All</b></button><b>
+                                    </b></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </center>
+            </section>
+        </div>
+    </div>
+<script src="transactions.js"></script>
+</body>
+
+</html>

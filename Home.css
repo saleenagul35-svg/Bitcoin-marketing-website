@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box {
+    display: flex;
+}
+
+/* navbar section */
+.navbar-container {
+    height: 95.5vh;
+    background-color: #00153c;
+    color: white;
+    padding: 15px;
+    border-right: solid 2px white;
+}
+
+.hdpt1 {
+    display: inline;
+}
+
+.hdpt2 {
+    display: inline;
+    color: #4c7fec;
+}
+
+.navbar {
+    padding: 5px;
+    margin: 15px 0px;
+}
+
+.navbar-flx {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+nav h6 {
+    color: transparent;
+    text-shadow: -2px -2px 0.5px white;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-icon {
+    margin: 3px;
+    padding: 3px;
+}
+
+/* main */
+.mainhome {
+    /* background-color: #f2f2f9; */
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    background-image: url(./assets/back.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.welcome-Home {
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.lighter-mode {
+    /* background-color: white; */
+    background-image: url(./assets/light.jpg);
+    color: #00153c;
+    background-size: cover;
+}
+
+.note-e {
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 200px;
+}
+
+.note {
+    width: 500px;
+}
+
+.box-container4 {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: solid 7px #4c7fec;
+    color: #002659;
+    width: 200px;
+}
+
+.innerbox {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.side-icon {
+    width: 40px;
+}
+
+.para1 {
+    color: #4c7fec;
+    margin-top: 10px;
+}
+
+/* ============================ */
+/* RESPONSIVE MEDIA QUERIES */
+/* ============================ */
+
+/* For mobile devices (up to 767px) */
+@media (max-width: 767px) {
+    .box {
+        flex-direction: column;
+    }
+    
+    .navbar-container {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: solid 2px white;
+        position: relative;
+    }
+    
+    .mainhome {
+        width: 100%;
+        gap: 100px;
+        padding: 30px 15px;
+        min-height: auto;
+    }
+    
+    .welcome-Home {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    
+    .note-e {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        position: static;
+        bottom: 0;
+    }
+    
+    .note {
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .box-container4 {
+        width: 90%;
+        max-width: 300px;
+    }
+    
+    .navbar-flx {
+        align-items: center;
+    }
+    
+    nav h6 {
+        font-size: 0.9rem;
+    }
+    
+    a {
+        font-size: 0.95rem;
+    }
+}
+
+/* For tablets (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbar-container {
+        width: 220px;
+    }
+    
+    .mainhome {
+        width: calc(100% - 220px);
+        gap: 200px;
+    }
+    
+    .welcome-Home {
+        font-size: 2.2rem;
+    }
+    
+    .note {
+        width: 400px;
+        font-size: 2rem;
+    }
+    
+    .box-container4 {
+        width: 180px;
+    }
+    
+    .note-e {
+        bottom: 150px;
+    }
+}
+
+/* For small laptops (1024px to 1199px) */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .navbar-container {
+        width: 250px;
+    }
+    
+    .mainhome {
+        width: calc(100% - 250px);
+        gap: 250px;
+    }
+    
+    .welcome-Home {
+        font-size: 2.8rem;
+    }
+    
+    .note {
+        width: 450px;
+        font-size: 2.3rem;
+    }
+    
+    .box-container4 {
+        width: 220px;
+    }
+}
+
+/* For very small mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    .welcome-Home {
+        font-size: 1.5rem;
+    }
+    
+    .note {
+        font-size: 1.3rem;
+    }
+    
+    .box-container4 {
+        width: 95%;
+    }
+    
+    .mainhome {
+        gap: 80px;
+    }
+}
+
+/* For landscape mobile devices */
+@media (max-height: 600px) and (orientation: landscape) {
+    .navbar-container {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .mainhome {
+        height: 100vh;
+        overflow-y: auto;
+    }
+    
+    .note-e {
+        bottom: 50px;
+    }
+    
+    .welcome-Home {
+        font-size: 1.8rem;
+        margin-top: 20px;
+    }
+}
+
+/* For medium tablets in portrait (481px to 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .welcome-Home {
+        font-size: 2rem;
+    }
+    
+    .note {
+        font-size: 1.8rem;
+    }
+    
+    .box-container4 {
+        width: 70%;
+    }
+}
+
+/* Fix for extremely wide screens */
+@media (min-width: 1400px) {
+    .navbar-container {
+        width: 300px;
+    }
+    
+    .mainhome {
+        width: calc(100% - 300px);
+    }
+    
+    .welcome-Home {
+        font-size: 3.5rem;
+    }
+    
+    .note {
+        width: 550px;
+        font-size: 3rem;
+    }
+    
+    .box-container4 {
+        width: 250px;
+    }
+}
+
+/* Fix for background images on mobile */
+@media (max-width: 767px) {
+    .mainhome {
+        background-attachment: scroll;
+    }
+    
+    .lighter-mode {
+        background-attachment: scroll;
+    }
+}
+
+/* Ensure proper text wrapping */
+@media (max-width: 767px) {
+    .hdpt1, .hdpt2 {
+        display: block;
+        text-align: center;
+    }
+    
+    br {
+        display: none;
+    }
+}

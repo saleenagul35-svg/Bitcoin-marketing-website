@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Dashboard.css">
+
+</head>
+
+<body>
+    <div class="box">
+        <!-- navbar section -->
+        <div class="navbar-container">
+            <h1 class="hdpt1">Bitcoin</h1>
+            <h1 class="hdpt2">Website</h1>
+            <br><br><br>
+            <hr>
+            <nav class="navbar navbar-flx">
+                <h6>MAIN</h6>
+                <ul class="navbar-flx">
+                    <li><a href="home.html"><i class="fa-solid fa-users sidebar-icon"></i>Home</a></li>
+                    <li><a href="Dashboard.html"><i class="fa-solid fa-chart-pie sidebar-icon"></i>Dashboard</a></li>
+                    <li><a href="#"><i class="fa-solid fa-box sidebar-icon"></i>Compaign</a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping sidebar-icon"></i>Orders</a></li>
+                </ul>
+                <h6>REPORTS</h6>
+                <ul class="navbar-flx">
+                    <li><a href="analytics.html"><i class="fa-solid fa-chart-line sidebar-icon"></i>Analytics</a></li>
+                    <li><a href="transactions.html"><i class="fa-solid fa-coins sidebar-icon"></i>Transactions</a></li>
+                </ul>
+                <h6>ADMIN</h6>
+                <ul class="navbar-flx">
+                    <li><a href="settings.html"><i class="fa-solid fa-gear sidebar-icon"></i>Settings</a></li>
+                    <li><a href="#"><i class="fa-solid fa-bell sidebar-icon"></i>Notification</a></li>
+                    <li><a href="login.html"><i class="fa fa-sign-in sidebar-icon" aria-hidden="true" ></i>Log In</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mainset" id="home">
+                        <!--main box right -->
+            <div class="home">
+                <div class="home-header">
+                    <div>
+                        <h4>Market Trend</h4>
+                        <p>Show overview jan 2018-Dec 2019 <b><a href="">See Details</a></b></p>
+                    </div>
+                    <div>
+                        <button class="btn5"><i class="fa-solid fa-envelope icons"></i><b>Download Report</b></button>
+                    </div>
+                </div>
+                <div class="ratio">
+                    <div class="earn1">
+                        <div class="earn-left">
+                        <p>Today Revenue</p>
+                        <h3>$8,732,555,300</h3>
+                        <p class="avg-sales1">-310 avg. sales</p>
+                        </div>
+                        <div class="earn-right">
+                        <i class="fa-solid fa-chart-simple" id="Icons"></i>
+                        </div>
+                    </div>
+                    <div class="earn3">
+                        <div class="earn-left">
+                        <p>Bitcoin Sold</p>
+                        <h3>$162,100</h3>
+                        <p class="avg-sales2">-310 avg. sales</p>
+                        </div>
+                        <div class="earn-right">
+                        <i class="fa-solid fa-chart-simple" id="Icons"></i>
+                        </div>
+                    </div>
+                    <div class="earn3">
+                        <div class="earn-left">
+                        <p>Today orders</p>
+                        <h3>$895,342.354</h3>
+                        <p class="avg-sales3">-310 avg. sales</p>
+                        </div>
+                        <div class="earn-right">
+                        <i class="fa-solid fa-chart-simple " id="Icons"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/chart.jpg" alt="" class="graph-img">
+                </div>
+                <div class="bottom">
+                    <div class="bottom-left">
+                        <p>Bitcoin Price trend throughout the week <br>
+                            <b><a href="">Learn More</a></b></p>
+                    </div>
+                    <div class="bottom-right">
+                        <div>Sales Revenue</div>
+                        <div class="last">
+                            <h2>$48,892,453,500</h2>
+                            <p>last 8 months</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<script src="Dashboard.js"></script>
+</body>
+
+</html>

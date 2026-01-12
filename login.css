@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box {
+    display: flex;
+
+}
+
+/* navbar section */
+.navbar-container {
+    height: 95.5vh;
+    background-color: #00153c;
+    color: white;
+    padding: 15px;
+    border-right: solid 2px white;
+}
+
+.hdpt1 {
+    display: inline;
+
+}
+
+.hdpt2 {
+    display: inline;
+    color: #4c7fec;
+}
+
+.navbar {
+    padding: 5px;
+    margin: 15px 0px;
+}
+
+.navbar-flx {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+nav h6 {
+    color: transparent;
+    text-shadow: -2px -2px 0.5px white;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-icon {
+    margin: 3px;
+    padding: 3px;
+}
+
+/* main */
+.mainlog {
+    /* background-color: #f2f2f9; */
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+
+    background-image: url(./assets/back.jpg);
+    background-size: cover;
+
+}
+.lighter-mode{
+    
+    /* background-color: white; */
+   background-image: url(./assets/light.jpg);
+   color: #00153c;
+   background-size: cover;
+}
+/* form */
+input[type=text],
+input[type=password] {
+    width: 400px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 50px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+
+    
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+
+    /* color: white; */
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+    float: left;
+    width: 50%;
+    background-color: white;
+    border-radius: 50px;
+    color: #00153c;
+
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: #00153c;
+}
+
+/* Clear floats */
+.clearfix {
+    display: flex;
+    gap: 30px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+
+}
+/* ===== RESPONSIVE MEDIA QUERIES ===== */
+
+/* Tablet - 768px and below */
+@media screen and (max-width: 768px) {
+    .box {
+        flex-direction: column !important;
+    }
+    
+    .navbar-container {
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        border-right: none !important;
+        border-bottom: solid 2px white !important;
+        position: relative !important;
+    }
+    
+    .mainlog {
+        width: 100% !important;
+        min-height: calc(100vh - 200px) !important;
+        padding: 20px 15px !important;
+    }
+    
+    form {
+        width: 100% !important;
+        max-width: 500px !important;
+        margin: 0 auto !important;
+    }
+    
+    input[type=text],
+    input[type=password] {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}
+
+/* Mobile - 480px and below */
+@media screen and (max-width: 480px) {
+    .navbar-container {
+        padding: 12px !important;
+    }
+    
+    .hdpt1, .hdpt2 {
+        font-size: 1.4rem !important;
+    }
+    
+    .mainlog {
+        padding: 15px 10px !important;
+    }
+    
+    .container {
+        padding: 15px !important;
+    }
+    
+    h1 {
+        font-size: 1.5rem !important;
+        text-align: center !important;
+    }
+    
+    p {
+        font-size: 0.9rem !important;
+        text-align: center !important;
+    }
+    
+    input[type=text],
+    input[type=password] {
+        padding: 12px !important;
+        margin: 8px 0 20px 0 !important;
+        font-size: 1rem !important;
+    }
+    
+    .clearfix {
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+    
+    .cancelbtn, .signupbtn {
+        width: 100% !important;
+        float: none !important;
+        display: block !important;
+    }
+    
+    label {
+        font-size: 0.95rem !important;
+    }
+}
+
+/* Small Mobile - 320px and below */
+@media screen and (max-width: 320px) {
+    .navbar-container {
+        padding: 10px !important;
+    }
+    
+    .mainlog {
+        padding: 10px 5px !important;
+    }
+    
+    .container {
+        padding: 12px !important;
+    }
+    
+    h1 {
+        font-size: 1.3rem !important;
+    }
+    
+    input[type=text],
+    input[type=password] {
+        padding: 10px !important;
+        font-size: 0.9rem !important;
+    }
+    
+    button {
+        padding: 12px !important;
+        font-size: 0.9rem !important;
+    }
+}
+
