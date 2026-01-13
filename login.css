@@ -13,6 +13,38 @@ body {
 
 }
 
+@keyframes container {
+    0% {
+        left: 0px;
+        top: 10px;
+    }
+
+    25% {
+        left: 5px;
+        top: 0px;
+    }
+
+    50% {
+
+        left: 5px;
+        top: 10px
+    }
+
+    75% {
+
+        left: 0px;
+        top: 10px;
+
+    }
+
+    100% {
+
+        left: 5px;
+        top: 10px;
+    }
+
+}
+
 /* navbar section */
 .navbar-container {
     height: 95.5vh;
@@ -65,7 +97,7 @@ a {
 
 /* main */
 .mainlog {
-    /* background-color: #f2f2f9; */
+    background-color: #00153c;
     width: 83%;
     display: flex;
     flex-direction: column;
@@ -73,17 +105,19 @@ a {
 
     align-items: center;
 
-    background-image: url(./assets/back.jpg);
+    /* background-image: url(./assets/back.jpg); */
     background-size: cover;
 
 }
-.lighter-mode{
-    
-    /* background-color: white; */
-   background-image: url(./assets/light.jpg);
-   color: #00153c;
-   background-size: cover;
+
+.lighter-mode {
+
+    background-color: white;
+    /* background-image: url(./assets/light.jpg); */
+    color: #00153c;
+    background-size: cover;
 }
+
 /* form */
 input[type=text],
 input[type=password] {
@@ -110,7 +144,7 @@ hr {
 /* Set a style for all buttons */
 button {
 
-    
+
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -147,7 +181,17 @@ button:hover {
     color: white;
     display: flex;
     flex-direction: column;
+
+}
+.animation{
+        position: relative;
     background-color: #00153c;
+    position: relative;
+    animation-name: container;
+    animation-duration: 5s;
+    animation-delay: -2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 /* Clear floats */
@@ -161,6 +205,7 @@ button:hover {
     clear: both;
 
 }
+
 /* ===== RESPONSIVE MEDIA QUERIES ===== */
 
 /* Tablet - 768px and below */
@@ -168,7 +213,7 @@ button:hover {
     .box {
         flex-direction: column !important;
     }
-    
+
     .navbar-container {
         width: 100% !important;
         height: auto !important;
@@ -177,19 +222,19 @@ button:hover {
         border-bottom: solid 2px white !important;
         position: relative !important;
     }
-    
+
     .mainlog {
         width: 100% !important;
         min-height: calc(100vh - 200px) !important;
         padding: 20px 15px !important;
     }
-    
+
     form {
         width: 100% !important;
         max-width: 500px !important;
         margin: 0 auto !important;
     }
-    
+
     input[type=text],
     input[type=password] {
         width: 100% !important;
@@ -203,47 +248,49 @@ button:hover {
     .navbar-container {
         padding: 12px !important;
     }
-    
-    .hdpt1, .hdpt2 {
+
+    .hdpt1,
+    .hdpt2 {
         font-size: 1.4rem !important;
     }
-    
+
     .mainlog {
         padding: 15px 10px !important;
     }
-    
+
     .container {
         padding: 15px !important;
     }
-    
+
     h1 {
         font-size: 1.5rem !important;
         text-align: center !important;
     }
-    
+
     p {
         font-size: 0.9rem !important;
         text-align: center !important;
     }
-    
+
     input[type=text],
     input[type=password] {
         padding: 12px !important;
         margin: 8px 0 20px 0 !important;
         font-size: 1rem !important;
     }
-    
+
     .clearfix {
         flex-direction: column !important;
         gap: 10px !important;
     }
-    
-    .cancelbtn, .signupbtn {
+
+    .cancelbtn,
+    .signupbtn {
         width: 100% !important;
         float: none !important;
         display: block !important;
     }
-    
+
     label {
         font-size: 0.95rem !important;
     }
@@ -254,28 +301,27 @@ button:hover {
     .navbar-container {
         padding: 10px !important;
     }
-    
+
     .mainlog {
         padding: 10px 5px !important;
     }
-    
+
     .container {
         padding: 12px !important;
     }
-    
+
     h1 {
         font-size: 1.3rem !important;
     }
-    
+
     input[type=text],
     input[type=password] {
         padding: 10px !important;
         font-size: 0.9rem !important;
     }
-    
+
     button {
         padding: 12px !important;
         font-size: 0.9rem !important;
     }
 }
-

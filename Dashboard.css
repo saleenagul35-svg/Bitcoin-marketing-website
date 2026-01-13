@@ -12,6 +12,36 @@ body {
     display: flex;
 
 }
+@keyframes container {
+    0% {
+       left: 0px;
+        top:    50px;
+    }
+
+    25% {
+      left: 50px;
+        top: 0px;
+    }
+
+    50% {
+       
+        left: 50px;
+        top: 50px
+    }
+    75%{
+       
+        left: 0px;
+        top: 50px;
+        
+    }
+
+    100% {
+       
+        left: 50px;
+        top: 0px;
+    }
+
+}
 
 /* navbar section */
 .navbar-container {
@@ -65,7 +95,7 @@ a {
 
 /* main */
 .mainset {
-    /* background-color: #f2f2f9; */
+    background-color: #00153c;
     width: 83%;
     display: flex;
     flex-direction: column;
@@ -73,13 +103,13 @@ a {
   
     align-items: center;
   
-    background-image: url(./assets/back.jpg);
+    /* background-image: url(./assets/back.jpg); */
     background-size: cover;
     
 }
 .lighter-mode{
-    /* background-color: white; */
-   background-image: url(./assets/light.jpg);
+    background-color: white;
+   /* background-image: url(./assets/light.jpg); */
    color: #00153c;
    background-size: cover;
 }
@@ -89,6 +119,12 @@ a {
     flex-direction: column;
     background-color: #00153c;
     color: white;
+    position: relative;
+    animation-name: container;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-delay: -2;
+    animation-direction: alternate;
   
     
 }

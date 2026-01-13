@@ -65,19 +65,19 @@ a {
 
 /* main */
 .mainset {
-    
+    background-color: #00153c;
     width: 83%;
     display: flex;
     flex-direction: column;
   
-    background-image: url(./assets/back.jpg);
+    /* background-image: url(./assets/back.jpg); */
     background-size: cover;
     
 }
 .lighter-mode{
     
-    /* background-color: white; */
-   background-image: url(./assets/light.jpg);
+    background-color: white;
+   /* background-image: url(./assets/light.jpg); */
    color: #00153c;
    background-size: cover;
 }
