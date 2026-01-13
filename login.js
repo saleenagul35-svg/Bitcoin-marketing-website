@@ -1,3 +1,5 @@
+let form = document.getElementById("animation");
+
 let mainlog = document.querySelectorAll(".mainlog");
 if (localStorage.getItem("theme") === "lighter-mode") {
     mainlog.forEach(function (element) {
@@ -28,13 +30,19 @@ let signupbtn = document.getElementsByClassName("signupbtn");
 signupbtn[0].onclick = function(){
 if(sessionStorage.getItem("email")&&sessionStorage.getItem("password")&&sessionStorage.getItem("passwordRepeat")){
 
+    form.style.display="none";
+    alert("Congrats you are successfully Logged in");
+    
 
-    alert("Congrats you are successfully Logged in")
 }else{
     alert("kindly fill the form to Log In / Sign Up")
 }
 
 }
 
+form.addEventListener("submit",function(event){
+    form.style.display="none";
+    event.preventDefault();
+})
 
 
