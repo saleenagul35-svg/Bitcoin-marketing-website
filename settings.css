@@ -88,6 +88,9 @@ a {
     width: fit-content;
     margin: 10px;
 }
+/* .Switch-btn-light{
+ border: white solid 3px;
+} */
 /* ======================= ADDITIONAL RESPONSIVE MEDIA QUERIES ======================= */
 
 /* Large desktop screens (1920px and above) */
@@ -366,7 +369,7 @@ a {
 /* Dark mode preference */
 @media (prefers-color-scheme: dark) {
     .mainset:not(.lighter-mode) {
-        background-color: #0a0a0a;
+        
     }
 }
 
